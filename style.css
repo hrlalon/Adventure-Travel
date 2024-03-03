@@ -22,6 +22,10 @@ nav {
     margin: 52px 135px 49px;
 }
 
+.nav-bars {
+    display: none;
+}
+
 .nav-icon-title-container {
     display: flex;
     align-items: center;
@@ -169,8 +173,48 @@ nav {
 
 /* our popular tour section styles end */
 
+/* choose your destination section styles start */
+.choose-your-destination-section {
+    margin: 0 135px 100px;
+}
 
+.choose-your-destination-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+}
 
+.destination-desc {
+    margin: 24px 250px 48px;
+    text-align: center;
+}
+
+.destination-grid-container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.destination-row-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.destination-row-two {
+    display: grid;
+    grid-template-columns: 374px 474px 274px;
+    gap: 24px;
+}
+
+.destination-row-three {
+    display: grid;
+    grid-template-columns: 473px 673px;
+    gap: 24px;
+}
+
+/* choose your destination section styles end */
 
 /* mobile device responsive styles start */
 
@@ -194,6 +238,10 @@ nav {
 
     .nav-list-container ul {
         display: none;
+    }
+
+    .nav-bars {
+        display: block;
     }
 
     .banner-section {
@@ -264,6 +312,46 @@ nav {
     }
 
     .popular-tour-col-right img {
+        width: 100%;
+    }
+
+    .choose-your-destination-section {
+        margin: 50px 20px 50px;
+    }
+
+    .choose-your-destination-title {
+        font-size: 20px;
+    }
+
+    .destination-desc {
+        margin: 16px 20px;
+        text-align: center;
+    }
+
+    .destination-grid-container {
+        row-gap: 16px;
+    }
+
+    .destination-row-one {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .destination-row-two {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .destination-row-three {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .destination-row-one img,
+    .destination-row-two img,
+    .destination-row-three img {
         width: 100%;
     }
 }
