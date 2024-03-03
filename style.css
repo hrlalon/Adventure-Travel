@@ -132,6 +132,7 @@ nav {
     padding: 10px 35px;
 }
 
+
 /* navigation and banner section styles end */
 
 /* our popular tour section styles start */
@@ -202,6 +203,25 @@ nav {
     gap: 24px;
 }
 
+.destination-img-container {
+    position: relative;
+}
+
+.destination-img-container:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.destination-img-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    transform: translate(-50%);
+    font-size: 28px;
+    font-weight: 800;
+}
+
 .destination-row-two {
     display: grid;
     grid-template-columns: 374px 474px 274px;
@@ -215,6 +235,103 @@ nav {
 }
 
 /* choose your destination section styles end */
+
+/* why choose us section styles start */
+.why-choose-us {
+    margin: 0 135px 100px;
+}
+
+.hotels-services-prices-container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.hotel-services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.hotels {
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.services {
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.price-gurantee-container {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.price-gurantee {
+    max-width: 573px;
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/* why choose us section styles end */
+
+/* newsletter section styles start */
+.newsletter-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 135px 100px;
+    gap: 24px;
+}
+
+.newsletter-col-left {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 24px 0 24px;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.subscribe-input {
+    display: inline-block;
+    width: calc(100% - 32px);
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 16px;
+    width: calc(100% - 32px);
+}
+
+.newsletter-col-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* newsletter section styles end */
 
 /* mobile device responsive styles start */
 
@@ -343,16 +460,30 @@ nav {
         gap: 16px;
     }
 
-    .destination-row-three {
+    .destination-row-three,
+    .hotel-services-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
+    }
+
+    .destination-img-title {
+        font-size: 20px;
+        font-weight: 700;
     }
 
     .destination-row-one img,
     .destination-row-two img,
     .destination-row-three img {
         width: 100%;
+    }
+
+    .why-choose-us {
+        margin: 0 20px 50px;
+    }
+
+    .hotels-services-prices-container {
+        row-gap: 16px;
     }
 }
 
