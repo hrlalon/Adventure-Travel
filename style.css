@@ -1,0 +1,207 @@
+/* font style for all section */
+* {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* navigation and banner section styles start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 52px 135px 49px;
+}
+
+.nav-icon-title-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-icon-title-container img {
+    width: 48px;
+    height: 46px;
+}
+
+.nav-title {
+    font-size: 2.2em;
+    color: #131318;
+    font-weight: 800;
+}
+
+.travel-text {
+    color: #FF5400;
+}
+
+.nav-list-container ul {
+    display: flex;
+}
+
+.nav-list-container li {
+    list-style: none;
+    margin-right: 44px;
+}
+
+.nav-list-container li:last-child {
+    margin: 0;
+}
+
+.nav-list-container li:first-child a {
+    font-weight: 800;
+    color: #FF5400;
+}
+
+.nav-list-container a {
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #424247;
+    font-weight: 400;
+}
+
+.banner-section {
+    margin: 0 135px;
+    height: 500px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("Images/banner-background.png");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 4em;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.banner-description {
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    margin: 24px 247px 48px;
+}
+
+.find-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 748px;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.input-style {
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    outline-style: none;
+    border: 1px solid lightgray;
+}
+
+.find-now-btn {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 10px 35px;
+}
+
+/* navigation and banner section styles end */
+
+/* mobile device responsive styles start */
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin: 19px 20px 17px;
+    }
+
+    .nav-icon-title-container {
+        gap: 10px;
+    }
+
+    .nav-icon-title-container img {
+        width: 28px;
+        height: 32px;
+    }
+
+    .nav-title {
+        font-size: 1.3em;
+    }
+
+    .nav-list-container ul {
+        display: none;
+    }
+
+    .banner-section {
+        margin: 0 20px;
+        height: 500px;
+    }
+
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 1.4em;
+        font-weight: 800;
+        color: #fff;
+        margin: 0;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFF;
+        text-align: center;
+        margin: 10px 15px 32px;
+    }
+
+    .find-container {
+        flex-direction: column;
+        gap: 16px;
+        width: 80%;
+        padding: 16px;
+        height: auto;
+    }
+
+    .input-style {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 82%;
+    }
+
+    .find-now-btn {
+        width: 63%;
+    }
+
+
+}
+
+/* mobile device responsive styles end */
